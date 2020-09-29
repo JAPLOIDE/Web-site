@@ -1,0 +1,429 @@
+body{
+    background-color: ;
+    color: black
+}
+
+
+/* Podemos representar un color de 3 formas dentro de CSS:
+
+Palabra clave: red, blue, pink, etc.
+Hexadecimales: 0123456789ABCDEF
+hls() hlsa()
+#000000 = Negro
+#FFFFFF = Blanco
+Se representan por grupos de 2 -> Red, Green, Blue
+
+#FF0000 = Rojo
+#00FF00 = Verde
+#0000FF = Azul
+Para obtener un color más exacto se utiliza rgb o rgba:
+
+rgb(0, 200, 145)
+rgba(0, 50, 70, 0.5) para obtener transparencia
+¿Qué es un pixel?
+La menor unidad homogenea en color que forma parte de una imagen digital. */
+
+
+
+/* gris oscuro = #1d252c
+gris claro = #626262
+background gris = #1b2127 */
+/* celeste = #026fff */
+body{
+    font-family:"Fjalla One", sans-serif;
+    margin: 0px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 300;
+    font-style: italic;SSS
+}
+
+h1{
+    font-size: 40px;
+    line-height : 1.5;
+    letter-spacing: -.2px;   
+    text-transform: capitalize;
+    color: white;
+    margin: 0;
+    /* margin: 100px 700px 70px 30px; */  
+}
+
+h2{
+    color: # ;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+h1 strong{
+    color: #12142C;
+
+}
+
+ /* text-decoration: underline */
+/* line-height para modificar el alto de linea
+font-size para modificar el tamaño de la fuente
+font-weight para modificar el tipo de fuente
+font-style para modificar el estilo de la fuente
+letter-spacing para modificar el espacio entre letras
+text-transform para transformar la fuente (mayusculas, minuculas, etc)
+text-decoration para moodificar la decoración de la fuente */
+
+
+     /* border-top: 10px solid black; /*tamaño tipo estilo
+     border-right: 10px solid red;
+     border-left: 10px solid blue;
+     border-bo: 10px solid pink     */
+  /* border-color: black;
+     border-width: 15px;
+     border-style: solid; */
+
+.portafolio{
+    background: #333333;
+    color: black;
+    padding:20px ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.project{
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333333;
+    color: white;
+    box-shadow: 3px 5px 33px white;
+}
+
+.project-course,
+.project-date{
+    margin: 10px 0 ;
+    font-weight: bold;
+}
+.project-url{
+    margin: 10px 0;
+}
+/* .project-date{
+    margin: 10px 0;
+} */
+
+.project strong{
+    font-family:"Fjalla One", sans-serif;
+}
+
+.project-description{
+    font-size: 20px;
+}
+
+.project-title{
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 0;
+
+}
+
+.project-details{
+    width: 400px;
+}
+
+.project-imageContainer{
+    width: 200px;
+    display: flex;
+}
+
+.hero{
+    height: 660px;
+    background-image: url("../images/programando1.jpg");
+    /* background-size: 700px, 300px; */
+    /* background-repeat: no-repeat; */
+    /* background-position-x: right ; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-image{
+    object-fit: cover;
+
+}
+
+ 
+
+.header{
+    background-color: transparent#333333 ;
+    color: white ;
+    display: flex;
+    height: 20px;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Satisfy', cursive;
+}
+
+}
+
+.header a{
+    color: white;
+    text-decoration:none;
+}
+
+.header p{
+    width: inherit;
+}
+
+
+}
+.flexbox{
+    display: flex;
+    /* flex-direction: column; */
+    /* flex-wrap: nowrap; */
+    flex-wrap: wrap;
+}
+
+
+.box{
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+    flex-shrink: 0;
+    margin: 5px;
+}
+ol,
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+figure{
+    margin: 0;
+}
+
+.header {
+    background-color:  #333333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 90px; /* <---- solo agregamos esta linea */
+
+  }
+
+.header ol{
+    display: flex;
+  }
+  .menu { /* .menu hereda de .header */
+    height: inherit;
+  }
+  
+  .header ol { /* .header ol hereda de .menu */
+    display: flex;
+    height: inherit;
+  }
+  
+  .header ol li { /* .header ol li hereda de .header ol */
+    height: inherit;
+  }
+  
+  .header a { /* .header a hereda de .header ol li */
+    color: white;
+    text-decoration: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0 10px; /* <---- solo agregamos esta linea */
+  }
+
+.footer{
+    color: white;
+    background-color: #1b2127;
+    display: flex;
+    align-items: flex-start; 
+    justify-content: space-around;
+}
+
+.footer img{
+    vertical-align: middle;
+}
+
+.footer a{
+    color: white;
+    text-decoration: none;
+    
+}
+.tienda-list{
+    display: flex;
+    background-color:#333333;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.tienda{
+    margin: 10px;
+    width: 480px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #333333;
+    
+}
+.tienda img{
+    width: 450px;
+    object-fit: cover;
+    height: 250px;
+    background-color: #333333;
+    box-shadow: 3px 5px 33px rgb(118, 11, 11)(118, 11, 11);
+    overflow: hidden;
+
+    
+}
+
+.tienda-detail{
+    margin: 40px 40px;
+    margin-top: -40px;
+    background-image: url("../images/andromeda.png");
+    margin: -40px;
+    padding: 46px;
+    text-align: center;
+    height: -50px;
+    color: white;
+    box-shadow: 3px 5px 33px white;
+    overflow: hidden;
+
+
+}
+
+.boton{
+    border: 1px solid white;
+    padding: 5px 20px;
+    text-decoration: none ;
+    color: white; 
+    align-self: ;
+    box-shadow: 3px 5px 33px white;
+
+}
+
+.contacto{
+    background-color: #333333;
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 60px;
+}
+
+.social{
+}
+
+.social-link{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    background-size: 50px 50px;
+}
+
+.social-link.Twitter{
+    background-image: url("../images/twitter.png");
+    background-size: 50px 50px;
+}
+
+.social-link.Facebook{
+    background-image: url("../images/facebook.png");
+    background-size: 50px 50px;
+}
+
+
+.social-link.GitHub{
+    background-image: url("../images/github.png");
+    background-size: 50px 50px;
+}
+
+
+.social-link.Instagram{
+    background-image: url("../images/instagram.png");
+    background-size: 50px 50px;
+}
+
+.form-email input {
+border-color:white ;
+border-radius: 5px;
+padding: 10px 20px 10px 25px;
+background-image: url("../png/envelope.svg");
+background-size: 15px  15px;
+background-repeat: no-repeat;
+background-position-y: center;
+background-position-x:  5px;
+border-style: solid;
+}
+
+.form-email button{
+    display: flex;
+    margin-top: 10px;
+    background:transparent;
+    color: white;
+    padding: 10px 0;
+    border-radius: 5px;
+    width: 100px;
+    margin-top: 10px;
+
+    /* margin: 10px auto 0; */
+
+}
+
+.form-email h3{
+    font-family:"Source Sans" ;
+}
+
+.hero img{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container{
+    width: 95%;
+    max-width: 1000px;
+    margin:  auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
+
+.container p {
+    margin-bottom:40px;
+}
+/* --- Clase que agregaremos cuando el usuario haga scroll --- */
+.menu{
+	position:fixed;
+	top:0;
+    /* max-width:1000px; */
+    left: 1000px;
+	width:100%;
+	box-shadow:0px 4px 3px rgba(0,0,0,.5);
+}
+
+
+
+.animate__ani1 {
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: ani1; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+  }
