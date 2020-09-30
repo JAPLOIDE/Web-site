@@ -278,6 +278,9 @@ figure{
     border-radius: 20px;
     overflow: hidden;
     background-color: #333333;
+    -webkit-box-shadow: 17px 20px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 17px 20px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 17px 20px 5px 0px rgba(0,0,0,0.75);
     
 }
 .tienda img{
@@ -420,10 +423,17 @@ border-style: solid;
 
 
 
-.animate__ani1 {
-    display: inline-block;
-    margin: 0 0.5rem;
+
+/* This only changes this particular animation duration */
+.animate__animated.animate__flash {
+    --display: inline-block;
+    --margin: 0 0.5rem;
   
-    animation: ani1; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 2s; /* don't forget to set a duration! */
+    --animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    --animate-duration: 1.5s;
+    --animate-delay: 1s;
+    --animate-repeat: 2;
   }
+
+.animate__animated .animate__BackInLeft{
+}
