@@ -437,3 +437,8 @@ border-style: solid;
 
 .animate__animated .animate__BackInLeft{
 }
+
+.imagen-centro{
+    display: flex;
+    justify-content: start;
+}
