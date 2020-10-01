@@ -251,8 +251,8 @@ figure{
     color: white;
     background-color: #1b2127;
     display: flex;
-    align-items: flex-start; 
-    justify-content: space-around;
+    align-items: end; 
+    justify-content: left;
 }
 
 .footer img{
