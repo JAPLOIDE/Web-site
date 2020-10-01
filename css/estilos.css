@@ -257,6 +257,8 @@ figure{
 
 .footer img{
     vertical-align: middle;
+    align-items: flex-end;
+    justify-content: right;
 }
 
 .footer a{
@@ -441,4 +443,9 @@ border-style: solid;
 .imagen-centro{
     display: flex;
     justify-content: start;
+}
+
+
+.cuete{
+    background-color: #333333;
 }
